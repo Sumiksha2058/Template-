@@ -3,8 +3,8 @@ This project showcases a clean and straightforward layout using just HTML, CSS, 
 
 Setup Instructions
 Clone the repository:
-git clone https://github.com/yourusername/template-layout.git
-cd template-layout
+git clone https://github.com/Sumiksha2058/Template-
+cd template-
 
 Open the project in your favorite code editor:
 Open the project folder in the IDE you love.

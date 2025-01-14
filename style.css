@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background: rgb(230, 127, 120);
+    background: linear-gradient(90deg, rgba(230, 127, 120, 1) 0%, rgba(156, 49, 155, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(226, 105, 124, 0.5);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 0px #ffffff;
+    border-radius: 10px;
+    margin: -22px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card.zoom-in {
+    transform: scale(1.2); /* Zoom in */
+    opacity: 1;
+    background-color: rgba(226, 105, 124, 0.9);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2), inset 2px 2px 3px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure zoomed-in card is above others */
+}
+
+.card.zoom-out {
+    transform: scale(0.8); /* Zoom out */
+    opacity: 0.5; /* Reduce opacity */
+    background-color: rgba(226, 105, 124, 0.3); /* Further reduce background opacity */
+    box-shadow: none; /* Remove shadow */
+    border: none;
+    z-index: 1;
+}
+
+.card-body {
+    padding: 20px;
+    position: relative;
+}
+
+.avtar {
+    width: 100%;
+    height: 100px;
+    background-color: #E2697C;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 0px #ffffff;
+    border-radius: .5em;
+    margin: 0 auto;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0; /* Adjust margin to fix spacing */
+}
+
+.contain_one {
+    width: 40px;
+    height: 40px;
+    background-color: #E2697C;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 0px #ffffff;
+    border-radius: 50%;
+}
+
+.contain_two {
+    width: 100%;
+    height: auto;
+    background-color: none;
+    border-radius: .5em;
+}
+
+
+.inner_contain_one {
+    width: 100%;
+    height: 1em;
+    background-color: #E2697C;
+    box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.7), 0px 0px 0px #ffffff;
+    border-radius: .5em;
+    margin: 3px 10px;
+}
+
+.inner_contain_two {
+    width: 50%;
+    height: .5em;
+    background-color: #E2697C;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 0px #ffffff;
+    border-radius: .5em;
+    margin: 7px 10px;
+}
